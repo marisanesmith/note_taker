@@ -4,9 +4,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const noteTaker = require('../public/assets/js/index')
-
-
+// const noteTaker = require('../public/assets/js/index')
 
 const app = express();
 
@@ -23,27 +21,6 @@ app.use(express.static('public'));
 
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
-
-// app.get for the html files 
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-});
-
-app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/notes.html'));
-})
-
-// app.get for the api files
-
-app.get('/api/notes', (req, res) => res.json(noteTaker));
-
-// app.post for the api files
-
-app.post('/api/notes', (req, res) => {
-    const addNote = req.body;
-    // res.json(path.join(__dirname, 'public/notes.html'))
-});
 
 // LISTENER
 // The below code effectively "starts" our server
