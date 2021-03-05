@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/marisanesmith/note_taker#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   }
 }
