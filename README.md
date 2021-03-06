@@ -1,8 +1,8 @@
-# note_taker
+# Note Taker
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)<br>
 
-This application is used for employers to enter the employee roster so that it can generate on a form. 
+As a user I want to be able to write, save or delete notes to my app. I will be able to enter as many notes as I would like and will be able to delete the notes once I've finished my task.
 
 Table of Contents
 * [Usage](#Usage)
