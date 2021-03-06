@@ -17,10 +17,10 @@ Table of Contents
 * Deployed final app to Heroku
 
 ## GitHub Live Site Deployed on Heroku
-![Heroku Live Site](https://write-notes-marisa.herokuapp.com/)
+* Heroku: [Note Taker Heroku](https://write-notes-marisa.herokuapp.com/)
 
 ## GitHub Repo Link
-![GitHub Repo Link](https://github.com/marisanesmith/note_taker)
+* GitHub: [Note Taker GitHub Repo](https://github.com/marisanesmith/note_taker)
 
 ## License
 ![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)
