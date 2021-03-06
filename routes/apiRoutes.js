@@ -40,7 +40,8 @@ app.delete('/api/notes/:id', (req, res) => {
         if (err) throw err;
         let allNotes = JSON.parse(data);
         let filteredNotes = allNotes.filter(note => note.id != id)
-
+        db.length = 0;
+        filteredNotes.forEach(note => db.push(note))
         fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(filteredNotes), function(err) {
             if (err) throw err;
             res.send(filteredNotes)
